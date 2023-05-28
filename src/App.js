@@ -1,11 +1,17 @@
-import './App.css';
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Login from './components/Login/Login'
+import NotFound from './components/NotFound/NotFound'
+import BaseLayout from './components/BaseLayout/BaseLayout'
 
 function App() {
   return (
-    <div className="App">
-      <h1>React App Hello world</h1>
-    </div>
-  );
+    <Routes>
+      <Route exact path="/" element={<BaseLayout/>} />
+      <Route exact path="/login" element={<Login />} />
+      <Route path="*" element={<NotFound/>} />
+    </Routes>
+  )
 }
 
-export default App;
+export default App
