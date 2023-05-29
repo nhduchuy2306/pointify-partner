@@ -7,8 +7,8 @@ import BaseLayout from './components/BaseLayout/BaseLayout'
 function App() {
   return (
     <Routes>
-      <Route exact path="/" element={<BaseLayout/>} />
       <Route exact path="/login" element={<Login />} />
+      <Route exact path="/" element={<BaseLayout/>} />
       <Route path="*" element={<NotFound/>} />
     </Routes>
   )

@@ -3,14 +3,15 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB6aLXIrIHoGkRI10nDC2BnGQiojlAu66U",
-  authDomain: "loginfirebase-12fc1.firebaseapp.com",
-  databaseURL: "https://loginfirebase-12fc1-default-rtdb.firebaseio.com",
-  projectId: "loginfirebase-12fc1",
-  storageBucket: "loginfirebase-12fc1.appspot.com",
-  messagingSenderId: "1041310495028",
-  appId: "1:1041310495028:web:27ca55aff07ef0515c7561"
+  apiKey: "AIzaSyCF46CMpZqUUp932uHenkfZRPGk2gjBWw0",
+  authDomain: "wallet-auth-b323a.firebaseapp.com",
+  projectId: "wallet-auth-b323a",
+  storageBucket: "wallet-auth-b323a.appspot.com",
+  messagingSenderId: "783137803189",
+  appId: "1:783137803189:web:c1aeecc6121acd27e327fc",
+  measurementId: "G-7BF5VJQES7"
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

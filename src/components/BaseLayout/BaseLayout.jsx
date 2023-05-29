@@ -12,18 +12,20 @@ function getItem(label, key, icon, children) {
 }
 
 const items = [
-  getItem('Option 1', '1', <PieChartOutlined />),
-  getItem('Option 2', '2', <DesktopOutlined />),
-  getItem('User', 'sub1', <UserOutlined />, [
+  getItem('Dashboard', '1', <PieChartOutlined />),
+  getItem('Program', '2', <DesktopOutlined />),
+  getItem('Member', 'sub1', <UserOutlined />, [
     getItem('Tom', '3'),
     getItem('Bill', '4'),
     getItem('Alex', '5'),
   ]),
-  getItem('Team', 'sub2', <TeamOutlined />, [
-    getItem('Team 1', '6'), 
-    getItem('Team 2', '8')
+  getItem('Customer', 'sub2', <TeamOutlined />, [
+    getItem('Customer 1', '6'), 
+    getItem('Customer 2', '7')
   ]),
-  getItem('Files', '9', <FileOutlined />),
+  // getItem('Files', '9', <FileOutlined />),
+  getItem('Sign in', '8', <PieChartOutlined />),
+  getItem('Sign up', '9', <PieChartOutlined />),
 ];
 
 const BaseLayout = () => {
